@@ -1,8 +1,8 @@
 from pass_gen import Generation
 class Password_Manager:
-	def __init__(self):
-		self.path =  "C:/Users/zeroz/Desktop/PYTHON/mega_manager_password/pass.txt"
-		self.password = "dudoser"
+	def __init__(self,path=None,password =None):
+		self.path =  path
+		self.password = password
 	def check(self, inp_pass):
 		return self.password == inp_pass
 	def read_pass(self):
